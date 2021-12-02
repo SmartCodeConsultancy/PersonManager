@@ -1,0 +1,26 @@
+<div class="container">
+  <br />
+  <h3>Person Details</h3>
+  <br />
+  <div class="card">
+    <div class="card-header">
+      <div class="row">
+        <div class="col">
+          <h4>{{ person.name }}</h4>
+        </div>
+        <div class="col text-right">
+          <a href="#" routerLink="/person/list" class="btn btn-secondary btn-sm">Back To Person List</a>
+        </div>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><b>Id:</b> {{person.id}}</li>
+      <li class="list-group-item"><b>Id:</b> {{person.name}}</li>
+      <li class="list-group-item"><b>Id:</b> {{person.address}}</li>
+      <li class="list-group-item"><b>Id:</b> {{person.dateOfBirth}}</li>
+      <li class="list-group-item"><b>Id:</b> {{person.gender}}</li>
+      <li class="list-group-item"><b>Id:</b> {{person.email}}</li>
+      <li class="list-group-item"><b>Id:</b> {{person.phone}}</li>
+    </ul>
+  </div>
+</div>

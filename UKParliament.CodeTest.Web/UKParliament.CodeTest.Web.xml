@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UKParliament.CodeTest.Web</name>
+    </assembly>
+    <members>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.BaseController`1.#ctor(Microsoft.Extensions.Logging.ILogger{`0})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="logger">Inject logger</param>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:UKParliament.CodeTest.Web.Controllers.BaseController`1.Logger">
+            <summary>
+            Logger to be inherited.
+            </summary>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.BaseController`1.LogException(System.Exception)">
+            <summary>
+            Exception Logging
+            </summary>
+            <param name="ex">Exception</param>
+        </member>
+        <member name="T:UKParliament.CodeTest.Web.Controllers.PersonController">
+            <summary>
+            An API for person manager
+            </summary>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.PersonController.#ctor(UKParliament.CodeTest.Services.IPersonService,Microsoft.Extensions.Logging.ILogger{UKParliament.CodeTest.Web.Controllers.PersonController})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="personService">Inject Person Service </param>
+            <param name="logger">Inject logger</param>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.PersonController.GetPersonsAsync">
+            <summary>
+            A collection of person
+            </summary>
+            <returns>A collection of person entity in JSON</returns>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.PersonController.GetPersonAsync(System.Int32)">
+            <summary>
+            A person by its unique key value
+            </summary>
+            <param name="id">Unique key value</param>
+            <returns>Person entity in JSON</returns>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.PersonController.Create(UKParliament.CodeTest.Data.Model.Person)">
+            <summary>
+            An endpoint allow to create new person entity.
+            </summary>
+            <param name="person">Person object</param>
+            <returns>New created person entity</returns>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.PersonController.Edit(UKParliament.CodeTest.Data.Model.Person)">
+            <summary>
+            An endpoint allow to edit person entity.
+            </summary>
+            <param name="person">Person object</param>
+            <returns>Updated person entity</returns>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Controllers.PersonController.Remove(System.Int32)">
+            <summary>
+            An endpoint allow to remove person entity.
+            </summary>
+            <param name="id">Unique key value</param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:UKParliament.CodeTest.Web.Startup.RegisterServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Register services here.
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>
